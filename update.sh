@@ -2,12 +2,12 @@
 
 # assumes you are running your game server as a service
 SERVICE=palworld
-# name of the folder you used when installing the game via steamcmd
-STEAMGAMEFOLDER=Palworld-server
-# Steam App ID of the game
-STEAMAPPID=2394010
 # Folder location of steamcmd
 STEAMCMDFOLDER=/home/janthony/steamcmd
+# name of the folder you used when installing the game via steamcmd
+STEAMGAMEFOLDER=${STEAMCMDFOLDER}/Palworld-server
+# Steam App ID of the game
+STEAMAPPID=2394010
 
 # Check if palworld is running
 STATUS="$(systemctl is-active ${SERVICE}.service)"
